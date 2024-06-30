@@ -1,0 +1,179 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-booking-form-form {
+	background-color: #fff;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+	padding: 1rem;
+	border-radius: 8px;
+
+	.booking-form {
+		&__header {
+			margin-bottom: 2rem;
+		}
+
+		&__header-title {
+			margin: 0;
+			font-size: 1.4rem;
+		}
+
+		&__progress {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 2rem;
+		}
+
+		&__progress-tab {
+			flex: 0 0 32%;
+		}
+
+		&__progress-tab-info {
+			border-top: 4px solid #e4e5e7;
+			color: #a0a7b0;
+			padding-top: .3rem;
+			font-size: .9rem;
+			font-weight: 500;
+
+			&--active {
+				border-top: 4px solid #1051e4;
+				color: #1051e4;
+			}
+		}
+
+		&__alert {
+			padding: 1rem;
+			margin-bottom: 1rem;
+			font-size: 0.9rem;
+			border-radius: 4px;
+
+			&--danger {
+				background-color: #ffd3d3;
+			}
+		}
+
+		&__field {
+			margin-bottom: 1rem;
+
+			label {
+				display: block;
+				margin-bottom: .2rem;
+				font-size: .9rem;
+				font-weight: 600;
+			}
+
+			input {
+				width: 100%;
+				padding: .6rem;
+				border: 1px solid #a0a7b0;
+				border-radius: 4px;
+				box-sizing: border-box;
+				transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+				&:focus {
+					border-color: #1051e4;
+					box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.3);
+					outline: none;
+				  }
+			}
+		}
+
+		&__button {
+			padding: 0.5rem 0.8rem;
+			text-align: center;
+			font-weight: 500;
+			border: 1px solid transparent;
+			border-radius: 0.25rem;
+			cursor: pointer;
+			transition: background-color 0.3s;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+			&--primary {
+				background-color: #1051e4;
+				color: #fff;
+
+				&:hover {
+					background-color: #0a3aa6;
+				}
+			}
+
+			&--secondary {
+				background-color: #fff;
+				color: #303234;
+				border: 1px solid #a0a7b0;
+
+				&:hover {
+					background-color: #f8f9fa;
+				}
+			}
+
+			&:disabled {
+				opacity: 0.5;
+				cursor: not-allowed;
+			}
+		}
+
+		&__actions {
+			display: flex;
+    		justify-content: space-between;
+			padding: .5rem 0;
+		}
+
+		&__field-preview {
+			display: flex;
+			margin-bottom: 1rem;
+			font-size: .9rem;
+		}
+
+		&__field-preview-label {
+			flex: 0 0 10%;
+			color: #a0a7b0;
+		}
+
+		&__field-preview-value {
+			flex: 0 0 90%;
+			font-weight: 600;
+		}
+
+		&__review-step {
+			margin-bottom: 1rem;
+		}
+
+		&__review-step-field {
+			display: flex;
+			font-size: .9rem;
+			padding: .5rem 0;
+			border-bottom: 1px solid #e4e5e7;
+
+			&:first-child {
+				border-top: 1px solid #e4e5e7;
+			}
+		}
+
+		&__review-step-field-label {
+			flex: 0 0 20%;
+		}
+
+		&__review-step-field-value {
+			flex: 0 0 80%;
+			font-weight: 600;
+		}
+
+		&__submitted {
+			text-align: center;
+		}
+
+		&__submitted-title {
+			font-size: 1.8rem;
+			margin-bottom: .5rem;
+		}
+
+		&__submitted-message {
+			margin-bottom: 1rem;
+		}
+
+	}
+}
