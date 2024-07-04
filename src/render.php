@@ -135,8 +135,8 @@ wp_interactivity_state( 'booking-form', [
 						</div>
 					</template>
 
-					<div class="booking-form__review-step" data-wp-bind--hidden="!actions.isLastStep">
-						<template data-wp-each--field="actions.reviewFields" data-wp-each-key="context.field.id">
+					<div class="booking-form__review-step" data-wp-bind--hidden="!state.isLastStep">
+						<template data-wp-each--field="state.reviewFields" data-wp-each-key="context.field.id">
 							<div class="booking-form__review-step-field">
 								<div class="booking-form__review-step-field-label" data-wp-text="context.field.label"></div>
 								<div class="booking-form__review-step-field-value" data-wp-text="context.field.value"></div>
@@ -146,12 +146,12 @@ wp_interactivity_state( 'booking-form', [
 
 					<div class="booking-form__actions">
 						<div class="booking-form__actions-col">
-							<button class="booking-form__button booking-form__button--secondary" type="button" data-wp-on--click="actions.back" data-wp-bind--hidden="actions.isFirstStep"><?php esc_html_e( 'Back', 'booking-form' ); ?></button>
+							<button class="booking-form__button booking-form__button--secondary" type="button" data-wp-on--click="actions.back" data-wp-bind--hidden="state.isFirstStep"><?php esc_html_e( 'Back', 'booking-form' ); ?></button>
 						</div>
 
 						<div class="booking-form__actions-col">
-							<button class="booking-form__button booking-form__button--primary" data-wp-bind--hidden="actions.isLastStep"><?php esc_html_e( 'Next', 'booking-form' ); ?></button>
-							<button class="booking-form__button booking-form__button--primary" data-wp-on--click="actions.submit" data-wp-bind--hidden="!actions.isLastStep" data-wp-bind--disabled="context.submitting"><?php esc_html_e( 'Submit', 'booking-form' ); ?></button>
+							<button class="booking-form__button booking-form__button--primary" data-wp-bind--hidden="state.isLastStep"><?php esc_html_e( 'Next', 'booking-form' ); ?></button>
+							<button class="booking-form__button booking-form__button--primary" data-wp-on--click="actions.submit" data-wp-bind--hidden="!state.isLastStep" data-wp-bind--disabled="context.submitting"><?php esc_html_e( 'Submit', 'booking-form' ); ?></button>
 						</div>
 					</div>
 				</form>
