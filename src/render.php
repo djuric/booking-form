@@ -80,6 +80,10 @@ $steps = [
 	],
 ];
 
+wp_interactivity_state( 'booking-form', [
+	'title' => __( 'Booking Form Submission', 'booking-form' )
+]);
+
 ?>
 
 <div

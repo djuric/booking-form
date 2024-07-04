@@ -58,7 +58,6 @@ add_action( 'init', 'booking_form_register_post_type' );
  */
 function booking_form_enqueue_scripts() {
 	wp_enqueue_script( 'wp-api-fetch' );
-	wp_enqueue_script( 'wp-i18n' );
 }
 add_action( 'wp_enqueue_scripts', 'booking_form_enqueue_scripts' );
 
